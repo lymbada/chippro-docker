@@ -1,6 +1,7 @@
 FROM armhf/alpine
 
-RUN apk update && apk add avahi	dbus
+RUN apk update && apk add avahi \
+						dbus
 
 ADD start.sh /start.sh
 ADD services /etc/avahi/services
